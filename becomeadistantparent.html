@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisha yangu Organization</title>
+
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Link to your separate styles.css file -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.jpg">
+    <!-- Mailchimp code -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ace737a28a7633dda8b63b8a7/0bb484b401c41d048a2a0fc07.js");</script>
+</head>
+
+<body>
+    <!-- Navigation Bar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <!-- Logo / Icon Section -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.jpg" alt="Maisha yangu Organization Logo" class="logo img-fluid">
+                </a>
+            </div>
+
+            <!-- Navbar Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+<!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto custom-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About us</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <a class="dropdown-item" href="ourvisionandvalues.html">Our Vision and Values</a>
+                                <a class="dropdown-item" href="ourstory.html">Our Story</a>
+                                <a class="dropdown-item" href="careers.html">Our Careers</a>
+                                <a class="dropdown-item" href="ourteam.html">Our Team</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Our Programs</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="ourProgramsDropdown">
+                                <a class="dropdown-item" href="ourconcept.html">Our Concept</a>
+                                <a class="dropdown-item" href="ourprograms.html">Our Programs</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Our Impact</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="ourImpactDropdown">
+                                <a class="dropdown-item" href="ourimpact.html">Our Impact</a>
+                                <a class="dropdown-item" href="oursuccessstories.html">Our Success Stories</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Get Involved</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="getInvolvedDropdown">
+                                <a class="dropdown-item" href="sponsorachild.html">Sponsor a Child</a>
+                                <a class="dropdown-item" href="becomeadistantparent.html">Become a Distance Parent</a>
+                                <a class="dropdown-item" href="becomeapartner.html">Become a Partner</a>
+                                <a class="dropdown-item" href="becomeamentor.html">Become a Mentor</a>
+                                <a class="dropdown-item" href="becomeavolunteer.html">Become a Volunteer</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link support-button" href="supportus.html">Support Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <body>
+        <!-- All content wrapped in a container -->
+    <div class="container">
+        <!-- First Section -->
+        <div class="section-container">
+            <img class="section-image" src="assets/images/program2.png" alt="Section Image">
+            <div class="text-overlay">
+                <h2>Become a Distance Parent</h2>
+            </div>
+        </div>
+    
+        <p class="section-paragraph"> Maisha Yangu's distance parenting program enables you to support children, their
+            families and entire communities - giving them the chance to grow up healthy, educated and safe - forever changing
+            their life and future. The program is not just about financial assistance; it's about building meaningful connections, nurturing
+            dreams, and fostering a sense of belonging. Join us in making a difference in a child's life.
+        </p>
+    
+        <!-- New Section with Two Columns -->
+        <section class="two-columns-section">
+            <div class="column">
+                <!-- Your form goes here -->
+<h2>Join Us</h2>
+<form id="signupForm" method="POST" action="/signup">
+    <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+    </div>
+    <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+    </div>
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" placeholder="Enter your country" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+    <div class="form-group">
+        <label>What opportunities are you interested in?</label>
+        <div class="opportunities">
+            <input type="radio" id="volunteer" name="opportunity" value="volunteer">
+            <label for="volunteer">Volunteer</label>
+
+            <input type="radio" id="mentor" name="opportunity" value="mentor">
+            <label for="mentor">Mentor</label>
+
+            <input type="radio" id="distantParent" name="opportunity" value="distantParent">
+            <label for="distantParent">Distant Parent</label>
+
+            <input type="radio" id="internship" name="opportunity" value="internship">
+            <label for="internship">Internship</label>
+
+            <input type="radio" id="partner" name="opportunity" value="partner">
+            <label for="partner">Partner with Us</label>
+        </div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+            </div>
+            
+            <div class="column">
+                <h2>Get Started in Just 3 Steps!</h2>
+                <p class="numbered-paragraph">1. Signup below and we will revert with a phone call</p>
+                <p class="numbered-paragraph">2. Match you with a student</p>
+                <p class="numbered-paragraph">3. Introduce you to the child</p>
+            </div>
+        </section>
+
+        <!-- New Section -->
+<section class="new-section">
+    <h2 class="section-title">Good to know - Information for distance parents</h2>
+    <div class="section-content">
+        <h3 class="section-subtitle">For what you receive</h3>
+        <p class="section-paragraph">By joining the distance parenting program, you become part of Maisha Yangu 
+            Organization's donor community network. You will receive progress reports of the grades and seasonal greetings
+            from your supported student at the end of each school term. In addition, you will be able to communicate with
+            your supported student through video calls, emails, letters and drawings on a regular basis, as well as 
+            physical meetups if possible. This communication is an essential part of the program, enabling you to hear from 
+            the students and create a relationship with them and their families. We put emphasis on partnering with the parents/ caregivers
+            in providing for the students to foster a sense of responsibility and involvement in the children's lives.
+        </p>
+        <h3 class="section-subtitle">What child recieves</h3>
+        <p class="section-paragraph"> With your financial support of as little as 35 dollars per month depending on the package chosen, we can provide the children with school fees, school materials, a hot meal a day and a safe and friendly place to learn and play.
+        </p>
+            <h3 class="section-subtitle">Students</h3>
+            <p class="section-paragraph"> Our students come from Kawangware and are from families living in poverty. Children 
+                supported are in grade 4 to 8 and all classes in secondary school.
+            </p>
+            <h3 class="section-subtitle">Duration</h3>
+            <p class="section-paragraph">The minimum duration for the program is one term , which is 3 months. Note that one time donations are accepted but monthly donations are encouraged. </p>
+    </div>
+</section>
+</div> <!-- Closing container -->
+
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="widgets-container">
+        <div class="widget">
+            <h3>Company</h3>
+            <p>Our Vision</p>
+            <p>Our Team</p>
+            <p>Our Impact</p>
+        </div>
+
+        <div class="widget">
+            <h3>Program</h3>
+            <p>Our Concept</p>
+            <p>After School</p>
+            <p>Tukuza Talanta</p>
+            <p>Tubonge Program</p>
+            <p>Distance Parenting</p>
+        </div>
+
+        <div class="widget">
+            <h3>Get Involved</h3>
+            <p>Invest</p>
+            <p>Partnership</p>
+            <p>Mentorship</p>
+            <p>Volunteer</p>
+        </div>
+
+        <div class="widget">
+            <h3>Get in Touch!</h3>
+            <p>Email: info@maishayangu.org</p>
+            <p>Phone: +254 768 282 724 / +254736710984</p>
+            <p>Address: Mti mmoja, Kawangware</p>
+        </div>
+
+        <div class="widget">
+            <h3>Keep Up with the Latest News from Maisha Yangu!</h3>
+            <div class="position-relative mx-auto" style="max-width: 400px;">
+                <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="assets/images/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="assets/images/instagram.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="assets/images/facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="assets/images/youtube.png" alt="YouTube"></a>
+        </div>
+    </div>
+</footer>
+
+ <!-- Link Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+ // Custom Script
+<script>
+    document.getElementById('signupForm').addEventListener('submit', async function (e) {
+        e.preventDefault(); // Prevent the form from submitting the default way
+    
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const city = document.getElementById('city').value;
+        const country = document.getElementById('country').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const opportunityInput = document.querySelector('input[name="opportunity"]:checked');
+        
+        if (!firstName || !email || !opportunityInput) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+    
+        const formData = {
+            firstName,
+            lastName,
+            city,
+            country,
+            email,
+            phone,
+            opportunity: opportunityInput.value
+        };
+    
+        const submitButton = document.getElementById('signupForm').querySelector('button');
+        submitButton.disabled = true;
+    
+        try {
+            const response = await fetch('/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+    
+            const text = await response.text(); // Get the raw text response
+    
+            let result;
+    
+            try {
+                result = JSON.parse(text); // Try to parse it as JSON
+            } catch (e) {
+                console.error('Error parsing JSON:', e);
+                alert('Invalid JSON response from server.');
+                return;
+            }
+    
+            if (response.ok) {
+                alert(result.message || 'Signup successful!');
+            } else {
+                alert('Signup failed: ' + (result.message || 'An unknown error occurred.'));
+            }
+        } catch (error) {
+            alert('An error occurred: ' + error.message);
+        } finally {
+            submitButton.disabled = false;
+        }
+    });
+    
+    
+</script>
+
+
+
+<p class="copyright-text">&copy; 2023 <a href="https://www.maishayangu.org" target="_blank">Maisha Yangu Organization</a> Designed by <a href="https://www.mywebbworks.com" target="_blank">Mywebbworks</a></p>
+</footer>
+</body>
+
+</html>

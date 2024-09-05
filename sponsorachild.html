@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisha yangu Organization</title>
+
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Link to your separate styles.css file -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.jpg">
+    <!-- Mailchimp code -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ace737a28a7633dda8b63b8a7/0bb484b401c41d048a2a0fc07.js");</script>
+</head>
+
+
+<body>
+    <!-- Navigation Bar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <!-- Logo / Icon Section -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.jpg" alt="Maisha yangu Organization Logo" class="logo img-fluid">
+                </a>
+            </div>
+
+            <!-- Navbar Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto custom-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About us</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <a class="dropdown-item" href="ourvisionandvalues.html">Our Vision and Values</a>
+                                <a class="dropdown-item" href="ourstory.html">Our Story</a>
+                                <a class="dropdown-item" href="careers.html">Our Careers</a>
+                                <a class="dropdown-item" href="ourteam.html">Our Team</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Our Programs</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <a class="dropdown-item" href="ourconcept.html">Our Concept</a>
+                                <a class="dropdown-item" href="ourprograms.html">Our Programs</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Our Impact</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <a class="dropdown-item" href="ourimpact.html">Our Impact</a>
+                                <a class="dropdown-item" href="oursuccessstories.html">Our Success Stories</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Get Involved</a>
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                                <a class="dropdown-item" href="sponsorachild.html">Sponsor a Child</a>
+                                <a class="dropdown-item" href="becomeadistantparent.html">Become a Distance Parent</a>
+                                <a class="dropdown-item" href="becomeapartner.html">Become a Partner</a>
+                                <a class="dropdown-item" href="becomeamentor.html">Become a Mentor</a>
+                                <a class="dropdown-item" href="becomeavolunteer.html">Become a Volunteer</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link support-button" href="supportus.html">Support Us</a>
+                    </li>         
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sponsor a Child</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Make sure to link to your actual CSS file -->
+    </head>
+    <!-- All content wrapped in a container -->
+    <div class="container">
+       <!-- First Section -->
+<section class="first-section">
+    <div class="container">
+        <div class="row">
+            <!-- First Column - Donate Form -->
+            <div class="col-lg-6">
+                <!-- Your donation form goes here -->
+                <form action="process_donation.php" method="post" class="donation-form">
+                    <div class="form-header">
+                        <strong>Take Action!</strong>
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="form-text">
+                        <p>Select a Campaign:</p>
+                        <div class="select-campaign">
+                            <select name="campaign" id="campaign">
+                                <option value="campaign1">Education</option>
+                                <option value="campaign2">Personality</option>
+                                <option value="campaign3">Talents</option>
+                                <option value="campaign3">Community</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-text">
+                        <p>Select or enter an amount:</p>
+                        <div class="amount-options">
+                            <input type="text" name="customAmount" placeholder="Enter custom amount">
+                            <div class="preset-amounts">
+                                <label>
+                                    <input type="radio" name="amount" value="500"> $500
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="750"> $750
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="1000"> $1000
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="1500"> $1500
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-text">
+                        <p>Select Donation Frequency:</p>
+                        <div class="select-frequency">
+                            <label>
+                                <input type="radio" name="frequency" value="one-time" checked> One Time
+                            </label>
+                            <label>
+                                <input type="radio" name="frequency" value="recurring"> Recurring
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Add more form fields as needed -->
+
+                    <input type="submit" value="Give">
+                </form>
+            </div>
+
+            <!-- Second Column - Text Paragraph -->
+            <div class="col-lg-6">
+                <p class="text-paragraph">
+                    <h2>Make a difference in a young person's life.</h2>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+   <!-- Second Section with Four Rows -->
+<section class="second-section">
+    <p>At Maisha Yangu Organization, we help more than 150 children from low-income households in Kawangware, Kenya, succeed in school, work, and life.</p>
+    <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+            <!-- Column 1 - Image -->
+            <div class="col-lg-6">
+                <img src="assets/images/food.png" alt="Image 1">
+            </div>
+            <!-- Column 2 - Title and Paragraph -->
+            <div class="col-lg-6">
+                <h3>Food Packages</h3>
+                <p> Help Provide Children with warm meals and beverages.
+                </p>
+                <p> Per day we spend 400 Kes (2.60 USD) for one child.
+                </p>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <!-- Column 1 - Image -->
+            <div class="col-lg-6">
+                <img src="assets/images/education.png" alt="Image 2">
+            </div>
+            <!-- Column 2 - Title and Paragraph -->
+            <div class="col-lg-6">
+                <h3>Educational Programs</h3>
+                <p>Help provide children and young adults with homework support, arts and music courses, vocational & entreprenureship programs.
+                </p>
+                <p>Per day we spend 430 Kes (2.80 USD) for one child which includes fees for material and teacher's salaries.
+                </p>
+               
+            </div>
+        </div>
+
+         <!-- Row 2 -->
+         <div class="row">
+            <!-- Column 1 - Image -->
+            <div class="col-lg-6">
+                <img src="assets/images/scholarship.png" alt="Image 2">
+            </div>
+            <!-- Column 2 - Title and Paragraph -->
+            <div class="col-lg-6">
+                <h3>School Fund</h3>
+                <p>Help children from low income households to access school supplies.
+                </p>
+                <p>Per day we spend 350 Kes (2.30 USD) for one child which includes uniforms, exam fees, remedial classes fees, mandatory lunch fees and school trips.
+                </p>
+               
+            </div>
+        </div>
+         <!-- Row 2 -->
+         <div class="row">
+            <!-- Column 1 - Image -->
+            <div class="col-lg-6">
+                <img src="assets/images/administration.png" alt="Image 2">
+            </div>
+            <!-- Column 2 - Title and Paragraph -->
+            <div class="col-lg-6">
+                <h3>Maisha Yangu Organization - Administration</h3>
+                <p>Help Maisha Yangu Organization to sustain and expand their programs and offers for children.
+                </p>
+                <p>Per day we spend 2400 Kes (15.50 USD) for rent, electricity and gas.
+                </p>
+               
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <!-- ... (repeat the structure for additional rows) -->
+    </div>
+     <!-- Take Action! Button -->
+     <a href="supportus.html" class="btn btn-secondary center-block">Take Action!</a>
+</section>
+</div> <!-- Closing container -->
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="widgets-container">
+        <div class="widget">
+            <h3>Company</h3>
+            <p>Our Vision</p>
+            <p>Our Team</p>
+            <p>Our Impact</p>
+        </div>
+
+        <div class="widget">
+            <h3>Program</h3>
+            <p>Our Concept</p>
+            <p>After School</p>
+            <p>Tukuza Talanta</p>
+            <p>Tubonge Program</p>
+            <p>Distance Parenting</p>
+        </div>
+
+        <div class="widget">
+            <h3>Get Involved</h3>
+            <p>Invest</p>
+            <p>Partnership</p>
+            <p>Mentorship</p>
+            <p>Volunteer</p>
+        </div>
+
+        <div class="widget">
+            <h3>Get in Touch!</h3>
+            <p>Email: info@maishayangu.org</p>
+            <p>Phone: +254 768 282 724 / +254736710984</p>
+            <p>Address: Mti mmoja, Kawangware</p>
+        </div>
+
+        <div class="widget">
+            <h3>Keep Up with the Latest News from Maisha Yangu!</h3>
+            <div class="position-relative mx-auto" style="max-width: 400px;">
+                <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="assets/images/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="assets/images/instagram.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="assets/images/facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="assets/images/youtube.png" alt="YouTube"></a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript for handling form submission -->
+<script>
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get the email input value
+        var email = document.getElementById('emailInput').value;
+
+        // Call Mailchimp API to add the subscriber
+        fetch('/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: email }) // Send email data in JSON format
+        })
+        .then(response => {
+            // Check if the response is successful
+            if (response.ok) {
+                return response.json(); // Parse the JSON response
+            } else {
+                throw new Error('Failed to subscribe'); // Throw an error if the response is not successful
+            }
+        })
+        .then(data => {
+            console.log(data); // Log success message
+            alert('Thank you for subscribing!'); // Show success message to the user
+        })
+        .catch(error => {
+            console.error(error); // Log any errors
+            alert('Failed to subscribe. Please try again later.'); // Show error message to the user
+        });
+    });
+</script>
+
+<p class="copyright-text">&copy; 2023 <a href="https://www.maishayangu.org" target="_blank">Maisha Yangu Organization</a> Designed by <a href="https://www.mywebbworks.com" target="_blank">Mywebbworks</a></p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,2232 @@
+/* Example CSS styles in styles.css */
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: #fff;
+    text-align: justify;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: transparent;
+}
+
+/* Navigation links */
+.navbar-light .navbar-nav .nav-link {
+    color: black; /* Text color for the navigation links */
+}
+
+/* Custom styles for navigation items */
+.custom-nav .nav-item {
+    margin-right: 30px; /* Adjust spacing between navigation items */
+}
+
+/* Dropdown menu display on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown menu link styles */
+.dropdown-menu a:hover {
+    background-color: #3D66C9;
+    color: #fff; /* Text color on hover */
+}
+
+/* Custom styles for logo */
+.logo {
+    max-width: 100px; /* Maximum width for the logo */
+    margin-right: 10px; /* Margin for spacing */
+}
+
+/* Support button styles */
+.support-button {
+    background-color: #EBA340;
+    color: white;
+    border-radius: 100px;
+    padding: 10px 20px;
+    float: right; /* Align button to the right */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .custom-nav .nav-item {
+        margin-right: 15px; /* Adjust spacing for smaller screens */
+    }
+
+    .support-button {
+        float: none; /* Remove float for better positioning */
+        margin-top: 10px; /* Add space above the button */
+    }
+}
+
+/* Container styles */
+.container {
+    width: 100%; /* Full width of the viewport */
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+/* Hero section styles */
+.hero {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    position: relative; /* Ensures the hero section is the context for z-index */
+}
+
+/* Video display styles */
+.video-img {
+    background-color: #EBA340;
+    width: 100%;
+    height: 400px; /* Set a fixed height for the video */
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    position: relative; /* Ensures the video is positioned relative to its container */
+    z-index: 9999; /* Bring the video to the absolute front */
+}
+
+/* Hero text styles */
+.hero-text {
+    text-align: left;
+    color: black;
+    padding-left: 20px;
+    position: relative; /* Ensure the text is positioned properly */
+    z-index: 1; /* Keeps text behind the video if overlapping */
+}
+
+/* Blue text styles */
+.blue-text {
+    color: #3D66C9;
+    font-size: 36px;
+}
+
+/* Intro text styles */
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Primary button styles */
+.btn-primary {
+    background-color: #3D66C9;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    float: right;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+/* Ensure the video and text are vertically aligned on larger screens */
+@media (min-width: 992px) {
+    .hero-text {
+        margin-left: 30px;
+    }
+}
+
+
+/* Updated styles for the impact section */
+.impact-section {
+    background-color: #EBA340;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Impact content styles */
+.impact-content {
+    text-align: center;
+}
+
+/* Impact stats styles */
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Updated to allow wrapping on smaller screens */
+}
+
+/* Statistic styles */
+.statistic {
+    text-align: center;
+    margin: 0 20px;
+    flex: 0 0 auto;
+    margin-bottom: 20px; /* Add space between statistics */
+}
+
+/* Icon in statistic styles */
+.statistic img {
+    width: 36px; /* Adjust the width of your icon */
+    height: 36px; /* Adjust the height of your icon */
+    margin-bottom: 10px;
+}
+
+/* Heading in statistic styles */
+.statistic h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Paragraph in statistic styles */
+.statistic p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Additional style for the title in the first column */
+.title-statistic {
+    flex-basis: 100%; /* Make the title span the full width */
+}
+
+/* Our Programs section styles */
+.our-programs {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Section title styles */
+.section-title {
+    margin-bottom: 30px;
+    text-align: center !important;
+    color: #3D66C9;
+}
+
+/* Section paragraph styles */
+.section-paragraph {
+    font-size: 16px;
+    color: black;
+    text-align: center !important;
+    margin-bottom: 30px;
+}
+
+/* Program categories styles */
+.program-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Category styles */
+.category {
+    width: 30%;
+    text-align: center;
+    margin: 20px 0;
+    padding: 80px; /* Double the padding to increase the height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    box-sizing: border-box; /* Include padding in the total height */
+}
+
+/* Category title styles */
+.category h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Category paragraph styles */
+.category p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Styles for the new row with three columns */
+.new-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px; /* Adjust margin as needed */
+    background-color: transparent; /* Set background color to primary color */
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Styles for the columns in the new row */
+.new-row .col {
+    width: 30%; /* Adjust width as needed */
+    text-align: center;
+    color: black; /* Set text color to black */
+}
+
+/* Black button styles */
+.btn-black {
+    color: white; /* Change text color to white */
+    background-color: #3D66C9; /* Change background color to primary */
+    border: 1px solid #3D66C9; /* Set border color to primary */
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Responsive Styles for Impact Section */
+@media (max-width: 768px) {
+    .impact-stats {
+        flex-direction: column; /* Stack statistics vertically on smaller screens */
+    }
+
+    .statistic {
+        margin: 0 10px;
+    }
+}
+
+/* Responsive Styles for Our Programs Section */
+@media (max-width: 768px) {
+    .program-categories {
+        flex-direction: column; /* Stack program categories vertically on smaller screens */
+    }
+
+    .category {
+        width: 100%; /* Make categories span full width on smaller screens */
+        margin-bottom: 20px; /* Add space between categories */
+    }
+
+    /* Ensure each paragraph appears below its corresponding image */
+    .new-row .col {
+        width: 100%; /* Make columns span full width on smaller screens */
+        text-align: center; /* Center the text below the image */
+        margin-bottom: 20px; /* Add space between paragraphs */
+    }
+
+    /* Ensure each column and its content appears below the other */
+    .new-row {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+}
+
+/* Responsive Styles for New Row with Three Columns */
+@media (max-width: 768px) {
+    .new-row .col {
+        width: 100%; /* Make columns span full width on smaller screens */
+    }
+}
+
+/* Responsive Styles for Buttons */
+@media (max-width: 768px) {
+    .btn-black {
+        display: block;
+        margin: 10px auto; /* Center the button on smaller screens */
+    }
+}
+/* Responsive Styles for Success Stories Section */
+@media (max-width: 768px) {
+    /* Container of the two columns styles */
+    .success-stories-content {
+        flex-direction: column-reverse; /* Reverse the order for smaller screens */
+    }
+
+    /* Column with circular-framed image styles */
+    .image-column {
+        order: 1; /* Move the image column to the bottom */
+        flex: 0 0 100%; /* Make the image column span full width */
+    }
+
+    /* Column with three paragraphs and a button styles */
+    .text-column {
+        order: 0; /* Keep the text column at the top */
+        flex: 0 0 100%; /* Make the text column span full width */
+        text-align: center; /* Center the text in the text column */
+    }
+}
+/* Responsive Styles for Our Partners Section */
+@media (max-width: 768px) {
+    /* Partners container styles */
+    .partners-container {
+        flex-wrap: wrap; /* Allow partners to wrap onto the next line on smaller screens */
+        justify-content: center; /* Center the partners horizontally */
+    }
+
+    /* Partner logo styles */
+    .partner-logo {
+        width: 50%; /* Adjust the width as needed for smaller screens */
+        max-width: 100%; /* Ensure the logos don't exceed their natural size */
+        margin-bottom: 20px; /* Add space between partner logos */
+    }
+}
+
+
+/* Join Us section styles */
+.join-us-section {
+    background-color: #EBA340;
+    padding: 20px;
+    color: #3D66C9;
+}
+
+/* Section title in Join Us styles */
+.join-us-section h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #3D66C9;
+}
+
+/* Primary background color for columns styles */
+.primary-bg {
+    background-color: transparent;
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Image container with primary background styles */
+.image-container {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    background-position: left top;
+    background-size: 100% 100%;
+    border-radius: 0 50px 50px 0;
+    overflow: hidden;
+}
+
+/* Button below each column styles */
+.image-container a {
+    display: block;
+    background-color: #3D66C9; /* Primary color as the button background */
+    color: #FFF; /* Text color for better contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto; /* Center the button horizontally */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the buttons */
+.image-container a:hover {
+    background-color: #265292; /* Adjust the hover color as needed */
+}
+
+
+/* Success Stories section styles */
+.success-stories-section {
+    background-color: transparent; /* Set the background to transparent */
+    padding: 20px;
+    color: #3D66C9;
+    text-align: center;
+}
+
+/* Section title in Success Stories styles */
+.success-stories-section h2 {
+    font-size: 24px;
+    color: #3D66C9;
+    margin-bottom: 20px;
+}
+
+/* Container of the two columns styles */
+.success-stories-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Column with the circular-framed image styles */
+.image-column {
+    flex: 0 0 48%;
+    background-color: transparent; /* Set the background to transparent */
+}
+
+/* Circular-framed image styles */
+.image-container.success-stories {
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent; /* Set the background to transparent */
+}
+
+/* Image inside circular frame styles */
+.image-container.success-stories img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: transparent; /* Set the background to transparent */
+}
+
+/* Column with three paragraphs and a button styles */
+.text-column {
+    flex: 0 0 48%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Paragraph in the text column styles */
+.text-column p {
+    margin-bottom: 15px;
+    color: #000;
+}
+
+/* Button in the text column styles */
+.text-column a.btn-primary {
+    background-color: #3D66C9;
+    color: #FFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Partners section styles */
+.partners-section {
+    background-color: transparent;
+    padding: 20px;
+    color: #3D66C9; /* Primary color for the title */
+    text-align: center;
+}
+
+/* Section title styles */
+.partners-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Partners container styles */
+.partners-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Partner logo styles */
+.partner-logo {
+    width: 100px; /* Adjust the width as needed for consistent size */
+    height: auto;
+}
+
+/* Our Story Section */
+.our-story-section {
+    background-color: #FFF;
+    padding: 20px;
+    color: #3D66C9;
+    text-align: center;
+}
+
+.our-story-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Two Columns in One Row */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Image and Text Columns */
+.column {
+    flex: 0 0 48%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Style for the image in the column */
+.column img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+}
+
+/* Style for the text in the column */
+.column p {
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* Style for the additional paragraph and button */
+.additional-paragraph {
+    text-align: right;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Change flex-direction to column */
+    }
+
+    .column {
+        flex: 1; /* Set both columns to take up full width */
+        width: 100%; /* Set width to 100% */
+    }
+
+    /* Add margin between paragraph and button */
+    .additional-paragraph {
+        margin-bottom: 10px; /* Add margin to the bottom of the paragraph */
+    }
+
+    .primary-btn {
+        margin-top: 10px; /* Add margin to the top of the button */
+    }
+}
+
+
+/* Style for the Our Team button */
+.our-team-button {
+    background-color: #3D66C9;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Add space between the paragraph and the button */
+    transition: background-color 0.3s ease;
+}
+
+.our-team-button:hover {
+    background-color: #EBA340;
+}
+
+/* Meet MAISHA YANGU Team Section Styles */
+.team-section {
+    background-color: transparent; /* Set the background color to transparent */
+    padding: 20px;
+    color: #3D66C9; /* Text color is primary */
+    text-align: center;
+}
+
+/* Section title styles */
+.team-section .section-title {
+    font-size: 24px;
+    color: #3D66C9;
+    margin-bottom: 20px;
+}
+
+/* Team Member Styles */
+.team-member {
+    margin-bottom: 30px;
+}
+
+/* Image Styles */
+.team-member img {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* LinkedIn Icon Styles */
+.team-member a img {
+    width: 30px; /* Set the width of the LinkedIn icon */
+    margin-top: 10px; /* Adjust the spacing between the image and LinkedIn icon */
+}
+
+/* Paragraph Styles */
+.team-member p {
+    color: black; /* Set text color to black */
+    margin-bottom: 15px; /* Add space below the paragraph */
+}
+
+/* Bold Paragraph Styles */
+.team-member .bold-paragraph {
+    font-weight: bold; /* Make the paragraph bold */
+}
+
+/* Board Members section styles */
+.board-members-section {
+    background-color: #FFF; /* Set your preferred background color */
+    padding: 20px;
+    color: #3D66C9; /* Text color in primary color */
+    text-align: center;
+}
+
+/* Board Member Column styles */
+.board-member {
+    flex: 0 0 48%; /* Adjust the size of both image and text columns */
+    margin-bottom: 20px; /* Add space between columns */
+    text-align: center; /* Align text to the center */
+}
+
+/* Style for the image in the column */
+.board-member img {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Style for the paragraphs in the column */
+.board-member p {
+    margin-bottom: 15px;
+    color: #000; /* Set text color to black */
+}
+
+/* Style for the bold paragraph in the column */
+.board-member p.bold-paragraph {
+    font-weight: bold;
+}
+
+
+
+/* Footer Section */
+.footer-section {
+    background-color: #3D66C9; /* Primary color as the background */
+    color: #FFF; /* Text color is white for better contrast */
+    text-align: left;
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Container for the widgets */
+.widgets-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping to new line if necessary */
+}
+
+/* Style for each widget */
+.widget {
+    width: 20%; /* Adjust the width as needed */
+    margin-bottom: 20px; /* Add space between widgets */
+}
+
+/* Style for the input in the news bar */
+.news-bar input[type="email"] {
+    width: calc(80% - 10px); /* Adjusted width to accommodate padding */
+    padding: 10px; /* Increase padding for better spacing */
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Set a semi-transparent background */
+    color: #000; /* Set text color to black */
+}
+
+/* Adjust placeholder color */
+.news-bar input[type="email"]::placeholder {
+    color: #FFF; /* Set the placeholder text color to white */
+    opacity: 0.7; /* Adjust opacity for better visibility */
+}
+
+/* Style for the subscribe button in the news bar */
+.news-bar button {
+    background-color: #EBA340 !important; /* Set the background color to #EBA340 */
+    color: #FFF !important; /* Set text color to white */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Hover effect for the subscribe button */
+.news-bar button:hover {
+    background-color: #D48C22; /* Adjust color on hover */
+}
+
+
+/* Style for social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; /* Add space above the social icons */
+}
+
+.social-icon {
+    margin: 0 8px; /* Adjust spacing between social icons */
+}
+
+/* Style for the social media icon images */
+.social-icon img {
+    width: 30px; /* Adjust the size of the social media icons */
+    height: auto;
+    filter: invert(0); /* Reset the inversion to default (black color) */
+    color: #FFF; /* Set the default color to white */
+}
+/* Style for the copyright text */
+.copyright-text {
+    color: #000; /* Set the text color to black */
+}
+
+
+/* Responsive Styles for Footer Section */
+@media (max-width: 768px) {
+    /* Adjust the width for each widget to span full width on smaller screens */
+    .widget {
+        width: 100%;
+        margin-bottom: 20px; /* Add space between widgets */
+    }
+
+    /* Center align the text in the news bar on smaller screens */
+    .news-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust the width of the input in the news bar on smaller screens */
+@media (max-width: 768px) {
+    .news-bar input {
+        width: 100%; /* Make input span full width on smaller screens */
+        margin-bottom: 10px; /* Add space between input and button */
+    }
+
+    /* Center align the subscribe button in the news bar on smaller screens */
+    .news-bar button {
+        width: 100%; /* Make button span full width on smaller screens */
+    }
+}
+
+    /* Add space above and below the social media icons on smaller screens */
+    .social-icons {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust social media icon styles for smaller screens */
+    .social-icon {
+        margin: 10px; /* Add spacing between social icons */
+    }
+
+    /* Adjust the size of the social media icon images on smaller screens */
+    .social-icon img {
+        width: 25px; /* Adjust the size of the social media icons */
+        height: auto;
+    }
+}
+
+/* Our vision and values*/
+/* Style for the centered section */
+.centered-section {
+    text-align: center; /* Center-align the content within the section */
+}
+
+/* Style for the image container */
+.image-container {
+    position: relative; /* Set position to relative for absolute positioning of the title */
+    display: inline-block; /* Display as inline-block for horizontal centering */
+}
+
+/* Style for the image */
+.image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    display: block; /* Remove extra spacing below the image */
+}
+
+/* Style for the title */
+/* Style for the title */
+.image-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3D66C9; /* Primary color for the title */
+    margin: 0;
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Style for the centered section */
+.centered-section {
+    text-align: center; /* Center-align the content within the section */
+}
+
+/* Style for the image container */
+.image-container {
+    position: relative;
+    text-align: center; /* Center-align content within the container */
+}
+
+/* Style for the image */
+.image-container img {
+    width: 100%; /* Make the image cover the full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block;
+}
+
+/* Style for the title */
+.image-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3D66C9; /* Primary color for the title */
+    margin: 0;
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Style for the paragraph section */
+.paragraph-section {
+    padding: 20px; /* Add padding as needed */
+    text-align: left; /* Align the text to the left */
+}
+
+/* Style for the paragraph container */
+.paragraph-container {
+    width: 100%; /* Make the container occupy the full width of the screen */
+    padding: 0 20px; /* Add padding to the sides */
+    box-sizing: border-box; /* Include padding in the total width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for paragraphs */
+.paragraph-container p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+    color: #000; /* Set text color to black */
+    text-align: left; /* Justify the text to occupy the full width */
+}
+
+/* Style for Our Mission section */
+.our-mission-section,
+.our-vision-section,
+.core-values-section {
+    text-align: center; /* Center-align the content within the section */
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Style for the mission, vision, and core values containers */
+.mission-container,
+.vision-container,
+.core-values-container {
+    max-width: 800px; /* Adjust the max-width of the container as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the title in the Our Mission, Our Vision, and Our Core Values sections */
+.our-mission-section h2,
+.our-vision-section h2,
+.core-values-section h2 {
+    color: #3D66C9; /* Primary color for the title */
+}
+
+/* Style for the centered paragraph in the Our Mission, Our Vision, and Our Core Values sections */
+.centered-paragraph {
+    text-align: center;
+    color: #3D66C9; /* Primary color for the paragraph text */
+}
+
+/* Style for the columns in the Our Core Values section */
+.core-values-container .row {
+    display: flex; /* Use flexbox for the columns */
+    justify-content: center; /* Center-align columns horizontally */
+    flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
+}
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Core Values Section */
+.core-values-section {
+    background-color: transparent !important; /* Add !important to ensure it takes precedence */
+    padding: 40px 0;
+}
+
+/* Container for Core Values content */
+.core-values-container {
+    text-align: center;
+}
+
+/* Title for Core Values */
+.core-values-container h2 {
+    color: #3D66C9;
+}
+
+/* Heart Icon Image */
+.heart-icon-img {
+    max-width: 100px; /* Adjust the size as needed */
+    margin-bottom: 15px;
+    background-color: #3D66C9;
+}
+
+/* Paragraphs */
+.love-column p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .love-column {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Position the left pseudo-element on the left side */
+.heart-icon::before {
+    left: 0;
+    transform: rotate(-45deg); /* Rotate the pseudo-elements to create the heart shape */
+}
+
+/* Position the right pseudo-element on the right side */
+.heart-icon::after {
+    left: 15px;
+    transform: rotate(45deg); /* Rotate the pseudo-elements to create the heart shape */
+}
+
+
+/* Style for the columns in the Our Core Values section */
+.core-values-container .row {
+    display: flex; /* Use flexbox for the columns */
+    justify-content: center; /* Center-align columns horizontally */
+    flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
+    background-color: transparent !important; /* Add !important to ensure it takes precedence */
+}
+
+/* Style for each column with heart shape and paragraph in the Our Core Values section */
+.like-column {
+    flex-basis: calc(33.33% - 20px); /* Adjust column width with space between */
+    box-sizing: border-box; /* Include padding in the total width */
+    margin-bottom: 20px; /* Add space between rows */
+    text-align: center; /* Center-align content within the column */
+    background-color: transparent !important; /* Add !important to ensure it takes precedence */
+}
+
+/* Style for the paragraphs in the Our Core Values section */
+.core-values-container p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+    color: #000; /* Set text color to black */
+    text-align: center; /* Center-align the text within the column */
+    background-color: transparent !important; /* Add !important to ensure it takes precedence */
+}
+
+/* Style for the Our Programs section */
+.our-programs-section {
+    background-color: transparent; /* Secondary color as background for the entire section */
+    color: #3D66C9; /* Text color is primary */
+    text-align: left; /* Center the text */
+}
+
+/* Style for paragraphs in Our Programs */
+.our-programs-container p {
+    color: #000; /* Set text color to black */
+    text-align: left; /* Align the text to the left */
+    margin-bottom: 20px; /* Add space between paragraphs */
+}
+
+/* Style for the Education section */
+.education-section {
+    background-color: transparent; /* Set background color to transparent */
+    color: #000; /* Text color is black */
+}
+
+/* Style for the Education section title */
+.education-container h2 {
+    color: #A5C98E; /* Set text color to #A5C98E */
+    text-align: left; /* Align the title to the left */
+}
+
+/* Style for rows and columns */
+.row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.col-md-6 {
+    width: 100%; /* Set width of columns to 100% for full width on smaller screens */
+    float: none; /* Remove float for stacking columns */
+}
+
+/* Style for the heading in each column */
+.col-md-6 h3 {
+    color: #A5C98E; /* Set text color of the heading to #A5C98E */
+}
+
+/* Clear the float after each row to prevent layout issues */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style for the Personality section */
+.personality-section {
+    background-color: transparent; /* Set background color to transparent */
+    color: #3D66C9; /* Text color is primary */
+}
+
+/* Style for the Personality section title */
+.personality-container h2 {
+    color: #A4C5E3; /* Set text color to #A4C5E3 */
+    text-align: left; /* Align the title to the left */
+}
+
+/* Style for rows and columns in Personality section */
+.personality-container .row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.personality-container .col-md-6 {
+    width: 100%; /* Set width of columns to 100% for full width on smaller screens */
+    float: none; /* Remove float for stacking columns */
+}
+
+/* Style for the paragraph in the second column */
+.personality-container .col-md-6 p {
+    color: #000; /* Set text color of the paragraph to black */
+}
+
+/* Style for the Learn More button */
+.personality-container .learn-more-btn {
+    background-color: #3D66C9; /* Set primary color as background for the button */
+    color: #FFF; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: center; /* Align the button to the center */
+    display: block; /* Make the button a block element to control its width */
+    margin-top: 10px; /* Add space above the button */
+}
+
+/* Style for the Talents section */
+.talents-section {
+    background-color: transparent; /* Set background color to transparent */
+    color: #000; /* Text color is primary */
+}
+
+/* Style for the Talents section title */
+.talents-container h2 {
+    color: #d9d9d9; /* Set text color to #d9d9d9 */
+    text-align: left; /* Align the title to the left */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Style for rows and columns in Talents section */
+.talents-container .row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.talents-container .col-md-6 {
+    width: 100%; /* Set width of columns to 100% for full width on smaller screens */
+    float: none; /* Remove float for stacking columns */
+}
+
+/* Style for the heading in the second column */
+.talents-container .col-md-6 h3 {
+    color: #d9d9d9; /* Set text color of the heading to #d9d9d9 */
+}
+
+/* Style for the Community section */
+.community-section {
+    background-color: transparent; /* Set background color to transparent */
+    color: #000; /* Text color is primary */
+}
+
+/* Style for the Community section title */
+.community-container h2 {
+    color: #ee9c64; /* Set text color to #ee9c64 */
+    text-align: left; /* Align the title to the left */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Style for the New Section */
+.new-section {
+    background-color: transparent; /* Set background color to transparent */
+    color: #3D66C9; /* Text color is primary */
+}
+
+/* Style for the centered paragraph */
+.new-container .centered-paragraph {
+    text-align: center; /* Align the paragraph to the center */
+    margin-bottom: 20px; /* Add space below the centered paragraph */
+    color: #000; /* Set text color to black */
+}
+
+/* Style for the primary color button */
+.new-container .primary-btn {
+    background-color: #3D66C9; /* Set primary color as background for the button */
+    color: #FFF; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: center; /* Align the button text to the center */
+    display: block; /* Make the button a block element to control its width */
+    margin-top: 10px; /* Add space above the button */
+}
+
+/* Style for rows and columns in New Section */
+.new-container .row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.new-container .col-md-4 {
+    width: 100%; /* Set width of columns to 100% for full width on smaller screens */
+    float: none; /* Remove float for stacking columns */
+}
+
+/* Clear the float after each row to prevent layout issues */
+.new-container .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .col-md-6,
+    .talents-container .col-md-6,
+    .new-container .col-md-4 {
+        width: 100%; /* Set width of columns to 100% for full width on smaller screens */
+        float: none; /* Remove float for stacking columns */
+    }
+}
+
+/* Style for Mentorship Program section */
+.mentorship-section {
+    text-align: center; /* Align the content at the center */
+    color: #3D66C9; /* Text color for titles */
+    padding: 20px; /* Add padding as needed */
+}
+
+/* Style for paragraphs in Mentorship Program section */
+.mentorship-section p {
+    color: #000; /* Set text color of the paragraphs to black */
+    text-align: left; /* Align paragraphs to the left */
+}
+
+/* Style for rows in Mentorship Program section */
+.mentorship-section .row {
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+/* Style for columns in Mentorship Program section */
+.mentorship-section .col-md-6 {
+    width: 50%; /* Set width of columns to 50% for two columns in each row */
+    float: left; /* Float the columns left for side-by-side placement */
+}
+
+/* Style for the heading in each column */
+.mentorship-section h3 {
+    color: #000; /* Set text color of the heading to black */
+    text-align: left; /* Align the heading to the left */
+}
+
+/* Clear the float after each row to prevent layout issues */
+.mentorship-section .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style for the New Section */
+.new-container {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #000; /* Text color is black */
+    text-align: center; /* Align the content at the center */
+    height: 100vh; /* Set the section height to the full viewport height */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally and vertically */
+}
+
+/* Style for the centered paragraph */
+.centered-paragraph {
+    text-align: center; /* Align the paragraph to the center */
+    margin-bottom: 20px; /* Add space below the centered paragraph */
+}
+
+/* Style for the primary color button */
+.primary-btn {
+    background-color: #3D66C9; /* Set primary color as background for the button */
+    color: #FFF; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: center; /* Align the button text to the center */
+    display: inline-block; /* Make the button an inline-block element */
+    margin-top: 10px; /* Add space above the button */
+}
+
+
+/* Style for the images in the Education, Personality, Talents, and Community sections */
+.education-container img,
+.personality-container img,
+.talents-container img,
+.community-container img {
+    width: 100%; /* Make the images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin-bottom: 20px; /* Add space below each image */
+}
+
+/* Style for the buttons in the New Section */
+.new-container .primary-btn {
+    display: block; /* Make the button a block element to control its width */
+    margin: 10px auto; /* Center the button horizontally and add space around it */
+    background-color: #3D66C9; /* Set primary color as background for the button */
+    color: #FFF; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding to the button */
+    text-align: center; /* Align the button text to the center */
+}
+
+
+
+/* Style for the Our Impact Section */
+.our-impact-section {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px; /* Add padding as needed */
+    color: #3D66C9; /* Text color is primary */
+    text-align: center; /* Align the content at the center */
+}
+
+/* Style for the Centered Title */
+.centered-title {
+    color: #3D66C9; /* Text color is primary */
+    margin-top: 20px; /* Add space at the top */
+}
+
+/* Style for the Two Paragraphs Section */
+.two-paragraphs-section {
+    background-color: transparent; /* Set background color to transparent */
+}
+
+/* Style for the Two Paragraphs Container */
+.two-paragraphs-container {
+    max-width: 100%;/* Set max-width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for Black Text */
+.black-text {
+    color: #000; /* Set text color to black */
+    margin-bottom: 20px; /* Add space between paragraphs if needed */
+}
+
+/* Style for the new section with primary color background */
+.four-columns-section {
+    background-color: #3D66C9; /* Set primary color as background */
+    color: #FFF; /* Text color is white */
+}
+
+/* Style for rows and columns */
+.four-columns-section .row {
+    display: flex; /* Use flexbox for a flexible layout */
+    justify-content: space-between; /* Space columns evenly */
+}
+
+.four-columns-section .col-md-3 {
+    width: 23%; /* Adjust the width of columns as needed */
+}
+
+/* Style for column content */
+.four-columns-section p {
+    text-align: center; /* Center the content within each column */
+}
+/* Style for rows and columns */
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-md-3 {
+    width: 22%; /* Adjust width as needed */
+    text-align: left;
+    margin: 0;
+}
+
+/* Style for icons */
+i {
+    color: #fff; /* Set icon color */
+    background-color: #3D66C9; /* Set background color for icons */
+    border-radius: 50%; /* Make the icons circular */
+}
+
+/* Style for the new section */
+.new-section {
+    background-color: transparent; /* Set background color to transparent or any desired color */
+    color: #000; /* Set text color to black */
+}
+
+/* Style for the centered paragraph */
+.new-section p {
+    text-align: left; /* Align the paragraph to the left */
+    margin-bottom: 20px; /* Add space below the paragraph */
+    color: #000; /* Set text color to black */
+}
+
+/* Align content to the top of the section */
+.new-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Style for rows and columns */
+.new-section .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.new-section .col-md-1 {
+    width: 15%; /* Adjust width as needed */
+    margin: 0; /* Remove margin */
+}
+
+/* Style for images within columns */
+.new-section img {
+    width: 100%; /* Adjust the width of the images to 100% */
+    max-width: 200px; /* Set a maximum width to control the size */
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0; /* Remove margin around the images */
+}
+
+/* Style for the New Section with 4 Paragraphs */
+.new-section {
+    background-color: transparent;
+    color: #000;
+}
+
+/* Style for the paragraphs */
+.new-section-paragraph {
+    text-align: left;
+    margin-bottom: 10px; /* Set a specific margin value between paragraphs */
+    color: #000;
+}
+
+/* Add space between the last section and the footer */
+.new-section {
+    margin-bottom: 100px; /* Adjust the margin as needed */
+}
+
+/* Mentor Introduction Section Styles */
+.mentor-intro {
+    text-align: left; /* Updated to left-align text */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mentorship-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.image-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; /* Set text color to white */
+}
+
+.image-paragraph {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/*become a partner*/
+
+/* General styling for header */
+header {
+    background-color: #ffffff; /* Set the background color to white */
+    color: #3D66C9; /* Set the text color to primary color */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling specifically for the h1 element within the header */
+header h1 {
+    font-size: 2em; /* Set the font size (adjust as needed) */
+    margin-bottom: 10px; /* Add margin below the title */
+}
+
+
+/* Styling for the main content section */
+.content-section {
+    color: #000000; /* Set text color to black */
+    margin-top: 20px; /* Add margin at the top (adjust as needed) */
+}
+
+/* Additional styling for paragraphs */
+.content-section p {
+    margin-bottom: 15px; /* Add margin below paragraphs (adjust as needed) */
+    line-height: 1.5; /* Set line height for better readability */
+}
+
+
+/* Styling for rows and columns */
+.row {
+    display: flex;
+    margin-bottom: 20px; /* Add margin between rows (adjust as needed) */
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Background color specifically for the column with image */
+.column img-container {
+    background-color: #3D66C9; /* Set the background color to primary color */
+}
+
+/* Additional styling for images */
+.column img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for titles */
+.column h3 {
+    color: #000000; /* Set title color to black */
+    margin-bottom: 10px; /* Add margin below titles (adjust as needed) */
+}
+
+
+
+/* Styling for the Our Partners section */
+.partners-section {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent; /* Set background color to transparent */
+}
+
+/* Styling for the title in the Our Partners section */
+.partners-section h2 {
+    color: #3D66C9; /* Set title color to primary color */
+    margin-bottom: 10px; /* Add margin below titles (adjust as needed) */
+}
+
+/* Styling for the centered paragraph */
+.centered-paragraph {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin below the paragraph (adjust as needed) */
+    color: #000000; /* Set text color to black */
+}
+
+/* Styling for the logos row */
+.logos-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Styling for logo images */
+.logo-image {
+    max-width: 100px; /* Adjust the max-width as needed */
+    margin: 10px; /* Adjust the margin as needed */
+}
+
+/* Add styling for the Join Our Network section */
+.join-network-section {
+    padding: 20px;
+    background-color: transparent;
+    color: #000000;
+    text-align: center; /* Align text to the left */
+}
+
+.join-network-section h2 {
+    color: #000000;
+    text-align: center; /* Align heading to the center */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form items to the left */
+    border: 2px solid #3D66C9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-field {
+    width: 48%;
+}
+
+/* Opportunity buttons styling */
+.opportunity-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opportunity-buttons label {
+    display: block;
+    text-align: left; /* Align radio buttons to the left */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #3D66C9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style for the Our Concept section */
+.our-concept-section {
+    background-color: #FFF; /* Set the background color as needed */
+    padding: 20px;
+    color: #3D66C9;
+    text-align: left;
+}
+
+/* Specific selector for paragraphs inside the .our-concept-section */
+.our-concept-section p {
+    text-align: left;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Concept Section Styles */
+.concept-section {
+    padding: 50px 0;
+    text-align: center; /* Center the content horizontally */
+}
+
+.rectangle-image {
+    max-width: 100%; /* Set a maximum width for the image */
+    height: auto; /* Let the height adjust automatically based on the width */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+    margin: 20px auto; /* Center the image horizontally and add space between content */
+    display: block; /* Ensure the image is a block element */
+}
+
+.section-paragraph {
+    font-size: 18px; /* Adjust the size as needed */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Row with three columns */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Individual column */
+.col {
+    flex: 1; /* Distribute space evenly among columns */
+    text-align: center; /* Center content horizontally */
+}
+
+/* Container for round icons */
+.icon-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the container round */
+    overflow: hidden; /* Ensure the image stays within the rounded container */
+    display: flex;
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    background-color: #5b5b5b; /* Background color of the container */
+}
+
+/* Adjustments for icon images */
+.icon-container img {
+    width: 60%; /* Make the image fill most of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for icon text */
+.icon-text {
+    color: #000; /* Text color black */
+    text-align: center;
+    margin-top: 10px; /* Add space between icon and text */
+}
+
+/* Specific selector for paragraphs inside the .concept-section */
+.concept-section p {
+    text-align: center; /* Center paragraphs */
+    color: #000; /* Set text color */
+    margin-bottom: 20px; /* Add space below paragraphs */
+}
+
+/* Additional Paragraph Style */
+.section-paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: black; /* Set text color to black */
+}
+
+/* Row and Column Styles */
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Adjust margin as needed to add space between columns */
+}
+
+.image-column {
+    flex: 1;
+    padding: 10px; /* Adjust padding as needed to add space between columns */
+    text-align: center; /* Center the text within the column */
+}
+
+/* Image Styles */
+.image-column img {
+    width: 100px; /* Set width to 100px */
+    height: 100px; /* Set height to 100px */
+    display: block;
+}
+
+/* Text Styles */
+.image-column p {
+    color: black; /* Set text color to black */
+}
+
+/* First Row Image Background Colors */
+.image-row:first-of-type .image-column:nth-child(1) img {
+    background-color: #A5C98E; /* Background color for image 1 */
+}
+
+.image-row:first-of-type .image-column:nth-child(2) img {
+    background-color: #A5C98E; /* Background color for image 2 */
+}
+
+.image-row:first-of-type .image-column:nth-child(3) img {
+    background-color: #A5C98E; /* Background color for image 3 */
+}
+
+.image-row:first-of-type .image-column:nth-child(4) img {
+    background-color: #ee9c64; /* Background color for image 4 */
+}
+
+.image-row:first-of-type .image-column:nth-child(5) img {
+    background-color: #ee9c64; /* Background color for image 5 */
+}
+
+.image-row:first-of-type .image-column:nth-child(6) img {
+    background-color: #ee9c64; /* Background color for image 6 */
+}
+
+/* Second Row Image Background Colors */
+.image-row:nth-of-type(2) .image-column:nth-child(1) img {
+    background-color: #A4C5E3; /* Background color for image 7 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(2) img {
+    background-color: #A4C5E3; /* Background color for image 8 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(3) img {
+    background-color: #A4C5E3; /* Background color for image 9 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(4) img {
+    background-color: #5b5b5b; /* Background color for image 10 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(5) img {
+    background-color: #5b5b5b; /* Background color for image 11 */
+}
+
+.image-row:nth-of-type(2) .image-column:nth-child(6) img {
+    background-color: #5b5b5b; /* Background color for image 12 */
+}
+
+
+/* First Section Styles */
+.first-section {
+    background-image: url('assets/images/vision.png');
+    /* Add other background styles as needed */
+}
+
+.text-paragraph {
+    color: #EBA340;
+    /* Add other styles for the paragraph */
+    text-align: left;
+}
+
+/* Form Styles */
+.donation-form {
+    background-color: white;
+    color: black; /* Text color is set to black */
+    padding: 20px;
+}
+
+.form-header {
+    font-weight: bold;
+    text-align: center; /* Centering the text */
+    color: #3D66C9; /* Primary color for the heading */
+}
+
+.form-text {
+    margin-top: 20px;
+}
+
+.select-campaign select,
+.amount-options input[type="text"],
+.preset-amounts label,
+.select-frequency label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.preset-amounts label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.select-frequency label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #FBB80B; /* Secondary color */
+    color: black; /* Text color is set to black */
+    padding: 8px 16px; /* Smaller padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    margin: 20px auto; /* Centering the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #E0A21D; /* Darker color on hover */
+}
+
+/* Second Section Styles */
+.second-section {
+    color: black; /* Text color is set to black */
+    margin-top: 20px;
+}
+
+.second-section p {
+    text-align: center; /* Centering the text */
+}
+
+.second-section h3 {
+    color: #3D66C9; /* Primary color for the heading */
+}
+
+.second-section img {
+    width: 100%; /* Make sure images take the full width of their container */
+}
+
+/* Style for "Take Action!" button */
+.btn-secondary {
+    background-color: #FBB80B; /* Secondary color */
+    color: black; /* Text color is set to black */
+    padding: 8px 16px; /* Smaller padding */
+    display: block;
+    margin: 20px auto; /* Centering the button */
+    text-align: center; /* Centering the text */
+    text-decoration: none; /* Remove underline for links */
+    border-radius: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #E0A21D; /* Darker color on hover */
+}
+
+
+/* Icons Row in the Our Concept section styles */
+.row {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+/* Icon Column in the Our Concept section styles */
+.col-md-2 {
+    text-align: left;
+    margin-bottom: 20px; /* Add space below each icon */
+}
+
+/* Icon Image in the Our Concept section styles */
+.col-md-2 img {
+    width: 100%; /* Make the image fill the container */
+    height: 80px; /* Set a fixed height for the icons */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    padding: 10px; /* Add padding for better visibility */
+}
+
+/* Icon Paragraph in the Our Concept section styles */
+.col-md-2 p {
+    margin-top: 10px; /* Add space above the text */
+    color: #000; /* Set text color to black */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Background colors for the icons */
+.col-md-2:nth-child(-n+3) img {
+    background-color: #A5C98E; /* Background color for the first three icons in the first row */
+}
+
+.col-md-2:nth-child(n+4):nth-child(-n+6) img {
+    background-color: #EE9C64; /* Background color for the last three icons in the first row */
+}
+
+.col-md-2:nth-child(n+7):nth-child(-n+9) img {
+    background-color: #A4C5E3; /* Background color for the first three icons in the second row */
+}
+
+.col-md-2:nth-child(n+10) img {
+    background-color: #D9D9D9; /* Background color for the last three icons in the second row */
+}
+
+/* Background color for the three columns in one row */
+.row .col-md-4 {
+    background-color: #D9D9D9; /* Set the background color as needed */
+    padding: 20px; /* Add padding for better visibility */
+    margin-bottom: 20px; /* Add space below each column */
+}
+
+/* Center align the Our Programs button */
+.col-md-12 button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Sponsor a child page */
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* First Section Styles */
+.first-section {
+    padding: 30px 0; /* Adjust the padding to modify the height of the background image */
+    background-image: url('assets/images/vision.png'); /* Add the path to your background image */
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Ensure the background doesn't repeat */
+}
+
+
+/* Donate Form Styles */
+.donation-form {
+    background-color: #F5F5F5;
+    padding: 10px; /* Adjust the padding to reduce the height */
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Text Paragraph Styles */
+.text-paragraph {
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .col-lg-6 {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+
+/* Second Section Styles */
+.second-section {
+    background-color: transparent;
+    padding: 50px 0;
+    color: #333;
+}
+
+.second-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.second-section h3 {
+    color: black;
+}
+
+.text-paragraph h2,
+.second-section p {
+    text-align: left;
+    color: black;
+}
+
+/* Take Action! Button Styles */
+.btn-secondary {
+    background-color: #FBB80B;
+    color: #333; /* Change to desired text color (e.g., black) */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block; /* Change to block to make it a block-level element */
+    margin: 20px 0; /* Add space above and below the button */
+    float: center; /* Align the button to the right */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .col-lg-6 {
+        width: 100%;
+    }
+}
+
+/*Become a distant parent page*/
+.section-container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+}
+
+.section-image {
+    width: 100%;
+    max-height: 50vh; /* Set the max height to half of the viewport height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-paragraph {
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Two Columns Section Styles */
+.two-columns-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.column {
+    flex: 0 0 48%; /* Adjust the width of the columns as needed */
+}
+
+/* Numbered Paragraph Styles */
+.numbered-paragraph {
+    background-color: #3D66C9; /* Primary color background */
+    color: #000000; /* Text color for numbered paragraphs */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Form, Title, and Paragraph Styles */
+form,
+.section-paragraph {
+    color: #000000; /* Set the text color to black */
+}
+
+/* Form Container Styles */
+.form-container {
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+/* Form Title Styles */
+form h2 {
+    color: #3D66C9; /* Primary color for form title */
+}
+
+/* Second Column Title Styles */
+.column h2 {
+    color: #000000; /* Set the text color of the second column title to black */
+}
+
+/* Form Styles */
+form {
+    width: 100%; /* Make the form take 100% width of the container */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 20px; /* Add padding to the form */
+}
+
+/* Form Group Styles */
+.form-group {
+    width: 100%; /* Make each form group take 100% width of the form */
+    box-sizing: border-box; /* Include padding and border in the width */
+    margin-bottom: 15px;
+    overflow: auto; /* Ensure content doesn't overflow */
+}
+
+/* Label Styles */
+.form-group label {
+    display: inline-block; /* Display labels inline */
+    width: 30%; /* Adjust the width of labels */
+    margin-bottom: 5px;
+}
+
+/* Input Styles */
+.form-group input {
+    width: calc(70% - 10px); /* Adjust the width of input fields */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: right; /* Float inputs to the right */
+    margin-left: 10px; /* Add margin between label and input */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust widths for smaller screens */
+    .form-group label {
+        width: 100%; /* Labels take full width */
+        margin-bottom: 10px; /* Increase margin bottom for labels */
+    }
+    
+    .form-group input {
+        width: calc(100% - 10px); /* Input fields take full width */
+        margin-left: 0; /* Remove left margin for inputs */
+        float: none; /* Reset float property */
+        margin-top: 5px; /* Add margin between inputs */
+    }
+}
+
+/* New Section Styles */
+.new-section {
+    padding: 50px 0;
+    margin-bottom: 20px; /* Adjust the value as needed for the desired space */
+}
+
+/* Section Title Styles */
+.section-title {
+    color: #3D66C9; /* Primary color */
+    text-align: left;
+}
+
+/* Section Content Styles */
+.section-content {
+    margin-top: 20px;
+    border: 2px solid #3D66C9; /* Primary color */
+    padding: 20px;
+}
+
+/* Section Subtitle Styles */
+.section-subtitle {
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Section Paragraph Styles */
+.content-container {
+    text-align: left; /* Align all text within the content container to the left */
+}
+
+.section-paragraph {
+    color: black;
+    margin-top: 10px;
+}
+
+/* Additional Space for Footer */
+footer {
+    margin-top: 200px; /* Adjust the value as needed for the desired space */
+}
+
+
+
+/* support us styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mpesaBanner {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Custom CSS for the Third Section */
+.third-section h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #3D66C9;
+    text-align: center; /* Center the title */
+}
+
+.third-section .donate-button {
+    background-color: #3D66C9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: auto; /* Center the button */
+}
+
+/* styles.css */
+
+/* Careers Section */
+.careers {
+    background-color: rgba(255, 255, 255, 0.9); /* Translucent white background */
+    padding: 80px 0; /* Adjust padding as needed */
+    margin-bottom: 50px; /* Space between this section and the next */
+}
+
+.careers .service-item {
+    background-color: #fff; /* White background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.careers .service-content {
+    text-align: center; /* Center align the content */
+}
+
+.careers .service-content p {
+    color: #000; /* Black text color */
+}
+
+.careers .service-content a.btn {
+    display: block;
+    margin: 20px auto 0; /* Center align read more button */
+}
+
+/* Increase the space between rows */
+.careers .row.g-4 {
+    margin-top: 30px; /* Increase the space between rows */
+}
+
+/* Adjust space before footer */
+.footer-section {
+    padding-top: 40px; /* Adjust as needed */
+}

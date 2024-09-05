@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisha Yangu Organization</title>
+
+    <!-- Font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to your separate styles.css file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.jpg">
+    <!-- Mailchimp code -->
+    <script id="mcjs">
+        !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ace737a28a7633dda8b63b8a7/0bb484b401c41d048a2a0fc07.js");
+    </script>
+</head>
+
+<body>
+    <!-- Navigation Bar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo / Icon Section -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.jpg" alt="Maisha Yangu Organization Logo" class="logo img-fluid">
+            </a>
+
+            <!-- Navbar Toggler for mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto custom-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+                            <a class="dropdown-item" href="ourvisionandvalues.html">Our Vision and Values</a>
+                            <a class="dropdown-item" href="ourstory.html">Our Story</a>
+                            <a class="dropdown-item" href="careers.html">Our Careers</a>
+                            <a class="dropdown-item" href="ourteam.html">Our Team</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Programs
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="programsDropdown">
+                            <a class="dropdown-item" href="ourconcept.html">Our Concept</a>
+                            <a class="dropdown-item" href="ourprograms.html">Our Programs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="impactDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Impact
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="impactDropdown">
+                            <a class="dropdown-item" href="ourimpact.html">Our Impact</a>
+                            <a class="dropdown-item" href="oursuccessstories.html">Our Success Stories</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="getInvolvedDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Get Involved
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="getInvolvedDropdown">
+                            <a class="dropdown-item" href="sponsorachild.html">Sponsor a Child</a>
+                            <a class="dropdown-item" href="becomeadistantparent.html">Become a Distance Parent</a>
+                            <a class="dropdown-item" href="becomeapartner.html">Become a Partner</a>
+                            <a class="dropdown-item" href="becomeamentor.html">Become a Mentor</a>
+                            <a class="dropdown-item" href="becomeavolunteer.html">Become a Volunteer</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link support-button" href="supportus.html">Support Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+<div class="container">
+    <!-- First Section -->
+    <section class="first-section">
+        <div class="row">
+            <!-- First Column - Donate Form -->
+            <div class="col-lg-6">
+                <form id="donationForm" class="donation-form">
+                    <div class="form-header">
+                        <strong>Donate Now!</strong>
+                        <br><br>
+                        <strong>Empowering lives, one child at a time.</strong>
+                    </div>
+                    <div class="form-text">
+                        <p>Select a Campaign:</p>
+                        <div class="select-campaign">
+                            <select name="campaign" id="campaign" required>
+                                <option value="campaign1">Education</option>
+                                <option value="campaign2">Personality</option>
+                                <option value="campaign3">Talents</option>
+                                <option value="campaign4">Community</option>
+                                <option value="campaign5">Uji Campaign</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-text">
+                        <p>Select or enter an amount:</p>
+                        <div class="amount-options">
+                            <input type="text" name="customAmount" id="customAmount" placeholder="Enter custom amount">
+                            <div class="preset-amounts">
+                                <label>
+                                    <input type="radio" name="amount" value="500"> $500
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="750"> $750
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="1000"> $1000
+                                </label>
+                                <label>
+                                    <input type="radio" name="amount" value="1500"> $1500
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-text">
+                        <p>Select Donation Frequency:</p>
+                        <div class="select-frequency">
+                            <label>
+                                <input type="radio" name="frequency" value="one-time" checked> One Time
+                            </label>
+                            <label>
+                                <input type="radio" name="frequency" value="recurring"> Recurring
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Give">
+                </form>
+            </div>
+
+            <!-- Second Column - M-Pesa Payment Form -->
+            <div class="col-lg-6">
+                <img id="mpesaBanner" src="assets/images/mpesa.png" alt="M-Pesa Banner">
+                <h2>M-Pesa Paybill Payment</h2>
+                <p>Please fill in the details below to make a payment.</p>
+                <form id="mpesaForm">
+                    <label for="paybillNumber">Paybill Number:</label>
+                    <input type="text" id="paybillNumber" name="paybillNumber" value="522522" readonly>
+
+                    <label for="accountNumber">Account Number:</label>
+                    <input type="text" id="accountNumber" name="accountNumber" value="5910291" readonly>
+
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" placeholder="Enter the amount" required>
+
+                    <label for="donorName">Your Name:</label>
+                    <input type="text" id="donorName" name="donorName" placeholder="Enter your name" required>
+
+                    <label for="donorPhone">Phone Number:</label>
+                    <input type="text" id="donorPhone" name="donorPhone" placeholder="Enter your phone number" required>
+
+                    <button type="button" onclick="makeMpesaPayment()">Donate Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+        <!-- Third Section -->
+        <section class="third-section">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Make a Tax-Deductible Donation Here!</h2>
+                    <div class="btn-donate-container mt-3">
+                        <a href="https://newhorizonsfoundation.com/project/single-project/2734/" class="btn btn-primary btn-donate">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> <!-- Closing container -->
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="widgets-container">
+            <div class="widget">
+                <h3>Company</h3>
+                <p>Our Vision</p>
+                <p>Our Team</p>
+                <p>Our Story</p>
+            </div>
+            <div class="widget">
+                <h3>Programs</h3>
+                <p>Our Concept</p>
+                <p>Our Programs</p>
+            </div>
+            <div class="widget">
+                <h3>Impact</h3>
+                <p>Our Impact</p>
+                <p>Success Stories</p>
+            </div>
+            <div class="widget">
+                <h3>Get Involved</h3>
+                <p>Sponsor a Child</p>
+                <p>Become a Distance Parent</p>
+                <p>Become a Partner</p>
+                <p>Become a Mentor</p>
+                <p>Become a Volunteer</p>
+            </div>
+            <div class="widget">
+                 <h3>Contact Us</h3>
+                <p>Email: info@maishayangu.org</p>
+                <p>Phone: +254 768 282 724 / +254736710984</p>
+                <p>Address: Nairobi, Kenya</p>
+                <a href="https://www.facebook.com/MaishaYanguOrg" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/MaishaYanguOrg" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/MaishaYanguOrg" class="social-icon"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script>
+        function makeMpesaPayment() {
+            const amount = document.getElementById('amount').value;
+            if (amount) {
+                alert(`Thank you for your donation of Ksh ${amount} via M-Pesa.`);
+                // Here, you would typically integrate with the M-Pesa API or process the payment as needed.
+            } else {
+                alert('Please enter an amount.');
+            }
+        }
+
+        document.getElementById('donationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const campaign = document.getElementById('campaign').value;
+            const amount = document.querySelector('input[name="amount"]:checked') ? document.querySelector('input[name="amount"]:checked').value : document.querySelector('input[name="customAmount"]').value;
+            const frequency = document.querySelector('input[name="frequency"]:checked').value;
+
+            if (amount) {
+                alert(`Thank you for choosing to support the ${campaign} campaign with a ${frequency} donation of $${amount}.`);
+                // Here, you would typically process the donation and possibly redirect the user or show a confirmation.
+            } else {
+                alert('Please select or enter an amount.');
+            }
+        });
+    </script>
+</body>
+
+</html>
